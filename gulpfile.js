@@ -12,6 +12,7 @@ var jasmine = require('gulp-jasmine');
 serverFiles = "./src/*.js";
 clientFiles = "./client/*.js";
 buildPath = "./dist";
+publicPath = "./public/*.html";
 clientJsPath = buildPath + "/js";
 
 gulp.task('default', ['compile', 'server'], function() {});
@@ -58,7 +59,7 @@ gulp.task('compile:css', function () {
 });
 
 gulp.task('compile:templates', function(){
-  gulp.src('./templates/*.html')
+  gulp.src(publicPath)
   .pipe(gulp.dest(buildPath));
 });
 
