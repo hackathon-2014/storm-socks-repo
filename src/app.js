@@ -12,8 +12,6 @@ var express = require('express');
 // var logger = require('morgan');
 
 // Misc 3rd party modules
-var colors = require('colors');
-var moment = require('moment');
 
 // Initialize express and OSC client
 var app = express();
