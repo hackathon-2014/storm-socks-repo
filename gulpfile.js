@@ -74,7 +74,7 @@ gulp.task('test', function() {
 });
 
 gulp.task('server', ['compile'], function() {
-  nodemon({ script: './dist/app.js',
+  nodemon({ script: './dist/server.js',
             ext: 'html js scss',
             ignore: ['/emailFiles/*'] })
     .on('change', ['compile'])
@@ -83,7 +83,7 @@ gulp.task('server', ['compile'], function() {
 });
 
 gulp.task('debugServer', ['compile'], function() {
-  nodemon({ script: './dist/app.js',
+  nodemon({ script: './dist/server.js',
             ext: 'html js scss',
             ignore: ['/emailFiles/*'],
             nodeArgs: ['debug']})
