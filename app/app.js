@@ -1,9 +1,13 @@
 require('angular');
+require('angular-bootstrap');
+require('angular-route');
+console.log("this:");
+var app = angular.module('Gepetto', ['ui.bootstrap', 'ngRoute']).config(function($routeProvider) {
 
-angular.module('Gepetto', ['ui.bootstrap', 'ngRoute']).config(['$routeProvider', function($routeProvider) {
-  console.log("yololo:");
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+  $routeProvider
+    .when('/', {templateUrl: 'views/main.html', controller: 'MainCtrl'})
+    .otherwise({templateUrl: '/views/404.html'});
+ 
+
+});
 

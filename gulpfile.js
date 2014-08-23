@@ -10,9 +10,9 @@ var rename = require('gulp-rename');
 var jasmine = require('gulp-jasmine');
 
 serverFiles = "./src/*.js";
-clientFiles = "./app/*.js";
+clientFiles = "./app/**/*.js";
 buildPath = "./dist";
-publicPath = "./public/*.html";
+publicPath = "./public/**/*.html";
 clientJsPath = buildPath + "/js";
 
 gulp.task('default', ['compile', 'server'], function() {});
