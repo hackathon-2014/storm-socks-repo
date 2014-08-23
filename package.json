@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/hackathon-2014/storm-socks-repo",
   "dependencies": {
+    "babylonjs": "^1.13.3",
     "express": "^4.8.5",
     "gulp": "^3.8.7",
     "gulp-bower-files": "^0.2.7",
