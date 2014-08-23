@@ -76,7 +76,7 @@ gulp.task('test', function() {
 gulp.task('server', ['compile'], function() {
   nodemon({ script: './dist/server.js',
             ext: 'html js scss',
-            ignore: ['/emailFiles/*'] })
+            ignore: ['/dist/*'] })
     .on('change', ['compile'])
     .on('restart', function () {
     });
