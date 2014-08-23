@@ -10,7 +10,7 @@ var rename = require('gulp-rename');
 var jasmine = require('gulp-jasmine');
 
 serverFiles = "./src/*.js";
-clientFiles = "./client/*.js";
+clientFiles = "./app/*.js";
 buildPath = "./dist";
 publicPath = "./public/*.html";
 clientJsPath = buildPath + "/js";
