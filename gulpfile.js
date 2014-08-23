@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var pkg = require('./package.json');
 var uglify = require('gulp-uglify');
-var es6ify = require('es6ify');
 var browserify = require('gulp-browserify');
 var gutil = require('gulp-util');
 var nodemon = require('gulp-nodemon');
