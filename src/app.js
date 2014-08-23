@@ -23,7 +23,7 @@ var serverRoot = __dirname;
 // Configure express app
 
 //.use(logger())
-  app.use(bodyParser())
+// app.use(bodyParser())
   // .use(session({
   //   secret: "secret",
   //   cookie: {"gepetto": {}}
