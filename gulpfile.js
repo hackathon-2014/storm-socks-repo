@@ -8,6 +8,7 @@ var bower = require('gulp-bower-files');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var jasmine = require('gulp-jasmine');
+var gulpConcat = require('gulp-concat');
 
 serverFiles = "./src/*.js";
 clientFiles = "./app/**/*.js";
@@ -34,8 +35,7 @@ gulp.task('compile:server', function () {
 
 gulp.task('compile:client', function () {
   gulp.src(clientFiles)
-    .pipe(browserify())
-    .pipe(gulp.dest(clientJsPath));
+    .pipe(gulpConcat('./dist/app.js'))
 });
 
 gulp.task('compile:lib', function () {

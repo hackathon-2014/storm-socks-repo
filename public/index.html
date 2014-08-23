@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Gepetto</title>
-  
-    <!-- <link rel="stylesheet" href="/css/app.css"> -->
   </head>
   <body ng-app="Gepetto">
-    <header>
-      <!-- <div ng-include="'/views/navbar.html'"></div> -->
-      <div ng-view>
-      Hello World
+    <div ng-view>
+      <div ng-controller="MainCtrl">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              Hello World in main
+            </div>
+          </div>
+        </div>
+
       </div>
-    </header>
+    </div>
   <script src="../js/app.js"></script>
   </body>
 </html>
