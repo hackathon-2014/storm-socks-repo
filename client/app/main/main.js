@@ -7,8 +7,4 @@ angular.module('gepettoApp')
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       })
-      .when('/build', {
-        templateUrl: 'app/build/build.html',
-        controller: 'BuildCtrl'
-      });
   });
