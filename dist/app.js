@@ -31,7 +31,7 @@ var serverRoot = __dirname;
 app.use('/js', express.static(serverRoot + "/js"));
 app.use('/css', express.static(serverRoot + "/css"));
 app.use('/img', express.static(serverRoot + "/img"));
-app.use("/", express.static(serverRoot);
+app.use("/", express.static(serverRoot));
 
 //// Serve assets & index page
 router.get('/', function(req, res) {
