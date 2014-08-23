@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/hackathon-2014/storm-socks-repo",
   "dependencies": {
+    "angular-ui-router": "^0.2.10",
     "express": "^4.8.5",
     "gulp": "^3.8.7",
     "gulp-bower-files": "^0.2.7",
